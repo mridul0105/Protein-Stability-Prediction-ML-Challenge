@@ -16,6 +16,7 @@ The dataset for this competition is curated from an extensive screening landscap
 
 ## Data Analysis and Data Cleaning
 <img width="356" alt="image" src="https://github.com/user-attachments/assets/f3c24ee6-f812-4337-83a6-8c198f9eec2d" />
+
 Before beginning the model development process, I wanted to understand what the distribution of data looked like. The above graph clearly shows that the majority of sequences are under 1500 in length, with very few sequences being greater than that. This means that it could be beneficial to use just portions of the sequence to save on computational costs. Thus, I have used the sequences up to 1500 in length. I padded the sequence if the sequences were shorter and cut the sequence at the end if they were greater than 1500. This will ensure that all my sequences are of the same length. 
 
 ## Sequence Encoding and Feature Engineering
@@ -43,6 +44,7 @@ Since most of the targets lie in a narrow range of 45-55, I also tried to scale 
 ## Hyperparameter selection
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/56a090a6-e9a7-4d0d-8ce1-b6cbf93a3019" />
 <img width="328" alt="image" src="https://github.com/user-attachments/assets/f4bc86be-63e5-42c2-b3ca-84226a121fa1" />
+
 For the hyperparameter selection, I used a tool called Optuna, I modified my code in such a way that I was able to run 5000 trials using several hyperparameters. 
 
 I used the following as hyperparameters - 
