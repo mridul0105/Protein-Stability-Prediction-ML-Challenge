@@ -144,7 +144,6 @@ just make sure that you have these file names on  your path
 this saves a tonne of computational time 
 in case you want to run this i have pre-computed embeddings at this link which you can download -
 https://drive.google.com/drive/folders/12TDMgEKjjCJd3WSoMhRNWnfcEQBoGao_?usp=sharing 
-
 '''
 def predict_and_save(model, device, test_file_path='test.csv', predictions_file_path='predictions.csv', test_embeddings_file='1500_t36_embeddings_test.npy'):
     df = pd.read_csv(test_file_path)
